@@ -1,7 +1,7 @@
-angular.module('flapperNews', []).controller('MainCtrl', [
+angular.module('flapperNews').controller('MainCtrl', [
 	'$scope', 
 	'posts', 
-	function($scope){
+	function($scope, posts){
 
 	$scope.posts = posts.posts;
 

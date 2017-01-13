@@ -1,4 +1,4 @@
-angular.module('flapperNews', []).controller('PostCtrl', [
+angular.module('flapperNews').controller('PostCtrl', [
 	'$scope',
 	'$stateParams',
 	'posts',
