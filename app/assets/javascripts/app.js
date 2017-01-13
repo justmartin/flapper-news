@@ -6,22 +6,16 @@ function($stateProvider, $urlRouterProvider) {
 
 	$stateProvider
 		.state('home', {
-			url: "/home",
+			url: '/home',
 			templateUrl: 'home/_home.html',
 			controller: 'MainCtrl'
 		});
 
 		.state('posts', {
-			url: 'posts/{id}',
+			url: '/posts/{id}',
 			templateUrl: 'posts/_posts.html',
 			controller: 'PostCtrl'
 		});
 
 	$urlRouterProvider.otherwise('home');
 }]);
-
-
-
-
-
-
