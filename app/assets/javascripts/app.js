@@ -9,9 +9,9 @@ function($stateProvider, $urlRouterProvider) {
 			templateUrl: 'home/_home.html',
 			controller: 'MainCtrl',
 			resolve: {
-				postPromise: ['posts', function(posts) {
-					return posts.getAll();
-				}]
+			  postPromise: ['posts', function(posts){
+			    return posts.getAll();
+			  }]
 			}
 		})
 
