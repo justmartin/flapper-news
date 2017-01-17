@@ -10,7 +10,7 @@ angular.module('flapperNews').factory('posts', ['$http', function($http) {
 	};
 
 	o.create = function(post) {
-		return $http.post('/posts.json', post).success(function(data) {
+		return $http.post('/posts.json', post).then(function(data) {
 			o.posts.push(data);
 		});
 	};
