@@ -15,6 +15,12 @@ angular.module('flapperNews').factory('posts', ['$http', function($http) {
 		});
 	};
 
+	o.upvote = function(post) {
+		return $http.put('/posts/' + post.id + '/upvote.json').then(function(data) {
+			post.upvotes += 1;
+		});
+	};
+
 	return o;
 
 }]);
