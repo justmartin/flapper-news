@@ -13,6 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.5'
 gem 'angular-rails-templates'
 gem 'responders'
+gem 'angular_rails_csrf'
 
 group :development, :test do
   gem 'byebug', platform: :mri
