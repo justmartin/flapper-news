@@ -21,6 +21,12 @@ angular.module('flapperNews').factory('posts', ['$http', function($http) {
   	});
 	};
 
+	o.get = function(id) {
+	  return $http.get('/posts/' + id + '.json').then(function(res){
+	    return res.data;
+	  });
+	};
+
 	return o;
 
 }]);
