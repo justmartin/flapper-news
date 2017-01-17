@@ -9,6 +9,12 @@ angular.module('flapperNews').factory('posts', ['$http', function($http) {
 		});
 	};
 
+	o.create = function(post) {
+		return $http.post('/posts.json', post).success(function(data) {
+			o.posts.push(data);
+		});
+	};
+
 	return o;
 
 }]);
